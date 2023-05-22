@@ -1,6 +1,6 @@
 # ETL-challenge
 ETL Challenge
-## Group-2 Members:  Sandhalie Fernando, Irwine Young, Rong Guo
+## Group-4 Members:  Sandhalie Fernando, Irwine Young, Rong Guo
 
 * Purpose: Building an ETL pipeline using Python, Pandas, and either Python dictionary methods or regular expressions to extract and transform the data.
 * After transforming the data , we create four CSV files and use the CSV file data to create an ERD and a table schema. Finally, we upload the CSV file data into a Postgres database.
@@ -80,7 +80,7 @@ The instructions for this mini project are divided into the following subsection
 4. Check th efinal DataFrame.
 
 # D. Create the Crowdfunding Database
-1. Inspect the four CSV files, and then sketch an ERD of the tables by using <QuickDBD> to an external site..
+1. Inspect the four CSV files, and then sketch an ERD of the tables by using <QuickDBD> to an external site.
 
 2. Use the information from the ERD to create a table schema for each CSV file.
     * Note: Remember to specify the data types, primary keys, foreign keys, and other constraints.
