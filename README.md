@@ -17,10 +17,10 @@ ETL Challenge
 ## Instructions:
 The instructions for this mini project are divided into the following subsections:
 
-# A. Create the Category and Subcategory DataFrames
-# B. Create the Campaign DataFrame
-# C. Create the Contacts DataFrame
-# D. Create the Crowdfunding Database
+### A. Create the Category and Subcategory DataFrames
+### B. Create the Campaign DataFrame
+### C. Create the Contacts DataFrame
+### D. Create the Crowdfunding Database
 
 # A. Create the Category and Subcategory DataFrames
 1. Extract and transform the <crowdfunding.xlsx> Excel data to create a category DataFrame that has the following columns:
