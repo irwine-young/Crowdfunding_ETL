@@ -1,28 +1,19 @@
 # ETL-challenge
-ETL Challenge
+
 ## Group-4 Members:  Sandhalie Fernando, Irwine Young, Rong Guo
 
 * Purpose: Building an ETL pipeline using Python, Pandas, and either Python dictionary methods or regular expressions to extract and transform the data.
 * After transforming the data , we create four CSV files and use the CSV file data to create an ERD and a table schema. Finally, we upload the CSV file data into a Postgres database.
 
-## Before You Begin：
-   1. Create a new repository, named <Crowdfunding_ETL>, not using exissting respository.
-
-   2. Clone the new repository to local computer.
-
-   3. Rename the file <ETL_Mini_Project_Starter_Code.ipynb>  with first name initial and last name.(For example, <ETL_Mini_Project_NRomanoff.ipynb>. Then, add this Jupyter notebook file and the Resources folder containing the <crowdfunding.xlsx> and the <contacts.xlsx> files to local repository).
-
-    4. Push the changes to GitHub.
-
 ## Instructions:
-The instructions for this mini project are divided into the following subsections:
+This mini project is divided into the following subsections:
 
-# A. Create the Category and Subcategory DataFrames
-# B. Create the Campaign DataFrame
-# C. Create the Contacts DataFrame
-# D. Create the Crowdfunding Database
+### A. Create the Category and Subcategory DataFrames
+### B. Create the Campaign DataFrame
+### C. Create the Contacts DataFrame
+### D. Create the Crowdfunding Database
 
-# A. Create the Category and Subcategory DataFrames
+## A. Create the Category and Subcategory DataFrames
 1. Extract and transform the <crowdfunding.xlsx> Excel data to create a category DataFrame that has the following columns:
     * A "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories;
     *  A "category" column that contains only the category titles.
@@ -35,7 +26,7 @@ The instructions for this mini project are divided into the following subsection
 
 4. Export the subcategory DataFrame as <subcategory.csv> and save it to  GitHub repository.
 
-# B. Create the Campaign DataFrame
+## B. Create the Campaign DataFrame
 1. Extract and transform the <crowdfunding.xlsx> Excel data to create a campaign DataFrame has the following columns:
     * The "cf_id" column;
     * The "contact_id" column;
@@ -54,7 +45,7 @@ The instructions for this mini project are divided into the following subsection
 
 2. Export the campaign DataFrame as <campaign.csv> and save it to your GitHub repository.
 
-# C. Create the Contacts DataFrame
+## C. Create the Contacts DataFrame
 1. Choose one of the following two options for extracting and transforming the data from the <contacts.xlsx> Excel data:
     * Option 1: Use Python dictionary methods.
     * Option 2: Use regular expressions.
@@ -79,7 +70,7 @@ The instructions for this mini project are divided into the following subsection
 
 4. Check th efinal DataFrame.
 
-# D. Create the Crowdfunding Database
+## D. Create the Crowdfunding Database
 1. Inspect the four CSV files, and then sketch an ERD of the tables by using <QuickDBD> to an external site.
 
 2. Use the information from the ERD to create a table schema for each CSV file.
@@ -97,20 +88,7 @@ The instructions for this mini project are divided into the following subsection
 
 8. Verify that each table has the correct data by running a <SELECT> statement for each.
 
-## Hints:
-* To split each "category & sub-category" column value into "category" and "subcategory" column values, use <df[["new_column1","new_column2"]] = df["column"].str.split()>. Make sure to pass the correct parameters to the <split()> function.
 
-* To get the unique category and subcategory values from the "category" and "subcategory" columns, create a NumPy array where the array length equals the number of unique categories and unique subcategories from each column. For information about how to do so, see <numpy.arange> to an external site. in the NumPy documentation.
-
-* To create the category and subcategory identification numbers, use a list comprehension to add the "cat" string or the "subcat" string to each number in the category or the subcategory array, respectively.
-
-* For more information about creating a new Pandas DataFrame, see the <pandas.DataFrame> to an external site. in the Pandas documentation.
-
-* To convert the "goal" and "pledged" columns to the <float> data type, use the <astype()> method.
-
-* To convert the "launch_date" and "end_date" UTC times to the <datetime> format, see the <Transform_Grocery_Orders_Solved.ipynb> activity solution.
-
-* For more information about how to add the "category_id" and "subcategory_id" unique identification numbers to the campaign DataFrame, see the <pandas.DataFrame.merge >to an external site. in the Pandas documentation.
 
 ## End
 
